@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script>
+    function myfun()
+    {
+        var num1=document.getElementById("A").value;
+        var num2=document.getElementById("B").value;
+        var num3=document.getElementById("C").value;
+        if(num1>num2 && num1>num3)
+        {
+            document.write("num1 is greater than="+num1);
+        }
+        else if(num2>num1 && num2>num3)
+        {
+            document.write("num2 is greater than");
+        }
+        else
+        {
+            document.write("num3 is greater than");
+        }
+    }
+   </script>
+</head>
+<body>
+    first number
+    <br><br>
+    <input type="text" id="A">
+    <br><br>
+    second number
+    <br><br>
+    <input type="text" id="B">
+    <br><br>
+    Third number
+    <br><br>
+    <input type="text" id="C">
+    <br><br>
+    <input type="button" value="sumbit" onclick="myfun()">
+</body>
+</html>

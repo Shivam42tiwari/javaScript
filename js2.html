@@ -1,0 +1,52 @@
+<!-- base            hra     da 
+1-4000          2%      3%
+4000-8000       4%      5%      
+8000-12000      6%      7%
+12000-above     8%      10% -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function myfun()
+        {
+            var base=document.getElementById("A").value;
+            if(base<=4000)
+            {
+                var hra=base*2/100;
+                var da=base*3/100;
+                var ts=base-(hra+da);
+            }
+            else if (base>=4000 && base<=8000)
+            {
+                var hra=base*3/100;
+                var da=base*5/100;
+                var ts=base-(hra+da);
+            }
+            else if (base>8000 && base<=12000)
+            {
+                var hra=base*4/100;
+                var da=base*6/100;
+                var ts=base-(hra+da);
+            }
+            else{
+                var hra=base*5/100;
+                var da=base*8/100;
+                var ts=base-(hra+da);
+            }
+        
+            
+            
+            document.write("total salary="+ts);
+        }
+    </script>
+
+   
+</head>
+<body>
+    enter your salary
+    <input type="text" id="A">
+    <br><br>
+    <input type="button" value="sumbit" onclick="myfun()">
+</body>
+</html>

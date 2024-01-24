@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<script>
+    //def of function
+    function swap(){
+        //def of function
+        var stutes=confirm("are you swap of text");
+        if(stutes==true)
+        {
+
+            var t1=document.getElementById("A").innerHTML;
+            var t2=document.getElementById("B").innerHTML;
+            document.getElementById("A").innerHTML=t2;
+            document.getElementById("B").innerHTML=t1;
+        }
+        else{
+            alert("not swap");
+        }
+    }
+</script>
+<body>
+    <h1 id="A">Digicoders pvt limited lucknow</h1>
+    <h2 id="B">Hello everyone how are you</h2>
+    <input type="button" value="sumbit" onclick="swap()">  //call in function
+    
+</body>
+</html>
